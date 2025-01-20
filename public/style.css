@@ -1,0 +1,176 @@
+/* ---------------------------
+   ベーススタイル
+--------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #f3f3f3;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ---------------------------
+     ヘッダー
+  --------------------------- */
+  .header {
+    background-color: #007acc;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .header__title {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  /* ---------------------------
+     メイン
+  --------------------------- */
+  .main-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* ---------------------------
+     検索セクション
+  --------------------------- */
+  .search-section {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .search-box {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #007acc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .search-box__input {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .search-box__button {
+    padding: 0.5rem 1rem;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-box__button:hover {
+    background-color: #005f99;
+  }
+  
+  .note {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* ---------------------------
+     天気セクション
+  --------------------------- */
+  .weather-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .weather-section__current {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-section__chart {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ---------------------------
+     履歴セクション
+  --------------------------- */
+  .history-section__title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .history-section__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .history-section__list li {
+    background-color: #007acc;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .history-section__list li:hover {
+    background-color: #005f99;
+  }
+  
+  /* ---------------------------
+     フッター
+  --------------------------- */
+  .footer {
+    background-color: #007acc;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .footer__text {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  /* ---------------------------
+     レスポンシブ対応
+  --------------------------- */
+  @media (max-width: 600px) {
+    .search-box {
+      width: 100%;
+      display: block;
+    }
+  
+    .search-box__input {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .search-box__button {
+      width: 100%;
+    }
+  
+    .weather-section {
+      flex-direction: column;
+    }
+  }
+  

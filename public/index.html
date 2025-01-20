@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Advanced Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Advanced Weather App</h1>
+  </header>
+
+  <main class="main-content">
+    <section class="search-section">
+      <div class="search-box">
+        <input
+          type="text"
+          id="cityInput"
+          class="search-box__input"
+          placeholder="都市名を入力..."
+        />
+        <button id="searchBtn" class="search-box__button">検索</button>
+      </div>
+      <p class="note">
+        ※都市名はローマ字または英語で入力してください。(例: Tokyo, London)
+      </p>
+    </section>
+
+    <section class="weather-section">
+      <div id="currentWeather" class="weather-section__current">
+        <!-- 現在の天気情報表示エリア -->
+      </div>
+      <div id="forecastChartContainer" class="weather-section__chart">
+        <!-- グラフ表示エリア -->
+        <canvas id="forecastChart"></canvas>
+      </div>
+    </section>
+
+    <section class="history-section">
+      <h2 class="history-section__title">検索履歴</h2>
+      <ul id="historyList" class="history-section__list">
+        <!-- 履歴リストをJavaScriptで挿入 -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2025 Advanced Weather App</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
